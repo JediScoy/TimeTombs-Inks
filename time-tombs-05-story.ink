@@ -1,12 +1,10 @@
-#title: The Water
-#author: Master Scoy
+# theme: dark
+# author: Master Scoy
 
 
 
 
-=== 05Preface ===
 
-->DONE
 
 === 05Prologue ===
 PROLOGUE
@@ -81,22 +79,4 @@ PROLOGUE
 
 ->DONE
 
-=== 05StartMenu ===
-    // Start Menu
-    // + {not 05Preface} [Preface]
-    //    ->05Preface
-    + [PRESS START]
-        -> 05Prologue
-    + [Episode 1]
-        -> 05Ep1
-    + [Episode 2]
-        -> 05Ep2
-    + [Episode 3]
-        -> 05Ep3
-    + [Episode 4]
-        -> 05Ep4
-    + [Episode 5]
-        -> 05Ep5
-
-->DONE
 ->END

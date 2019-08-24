@@ -1,15 +1,14 @@
-#theme: dark
-#author: Master Scoy
-#title: The Mountain
+# theme: dark
+# author: Master Scoy
+# title: DISCOVERY on the MOUNTAIN
 
 ->01StartMenu
 
 INCLUDE variables-global.ink
 INCLUDE variables-time-tombs.ink
-INCLUDE time-tombs-01-story.ink
+INCLUDE TimeTombs-01-story.ink
 
 === 01StartMenu ===
-Start Menu
     + [PRESS START]
         -> 01Prologue
     + [{01EpisodeOne}]

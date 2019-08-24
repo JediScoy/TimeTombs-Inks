@@ -135,7 +135,7 @@ What do you do?
     + [Healing spell]
         -- "Perhaps I should perform a minor healing spell?" asks {theCleric}.
         -- You say "I was thinking the same thing." {TheCleric} performs a MINOR HEALING spell.
-        -- (\+ {d4()} 
+        -- (\+ {d4()}
         ++ [next]
     + [Healing potion]
         -- "I'll give him a POTION OF HEALING (2d4 + 2)" you say.
@@ -346,7 +346,7 @@ VAR GiantSpiderAction2 = "<b>Web</b> +5 to hit, range 30/60 ft. The target is re
     // DC 12
     // Webbing AC 10; hp 5; vulnerability to fire damage; immunity to bludgeoning, poison, and psychic damage.
 === credits_00 ===
-Blue Mug Inn 
+Blue Mug Inn
     deviantart
 
 mine entrance

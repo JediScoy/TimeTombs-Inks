@@ -1,5 +1,6 @@
 #title: Preface
-#author: Master Scoy
+# theme: dark
+# author: Master Scoy
 
 // VARIABLES for Story Outline
 VAR SeasonTitle = "Preface"

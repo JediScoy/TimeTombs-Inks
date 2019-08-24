@@ -1,6 +1,6 @@
-#theme: dark
-#author: Master Scoy
-#title: WANDERING in the CAVE
+# theme: dark
+# author: Master Scoy
+# title: WANDERING in the CAVE
 
 ->00StartMenu
 

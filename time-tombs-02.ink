@@ -1,6 +1,6 @@
-#theme: dark
-#author: Master Scoy
-#title: The Desert
+# theme: dark
+# author: Master Scoy
+#title: EXPEDITION in the DESERT
 
 ->02StartMenu
 
@@ -11,8 +11,6 @@ INCLUDE time-tombs-02-story.ink
 
 === 02StartMenu ===
 Start Menu
-//    + {not 02Preface} [Preface]
-//        ->02Preface
     + [PRESS START]
         -> 02Prologue
     + [{02EpisodeOne}]

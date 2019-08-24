@@ -1,17 +1,11 @@
 #title: The Grassland
-#author: Master Scoy
+# theme: dark
+# author: Master Scoy
 
 
 
-=== 04Preface ===
-{Season04}
-SE0ING
-{WorldSetting}
-PURPOSE
-{CYOAPurpose}
-->DONE
-    +[Ω]
-        ->04StartMenu
+
+
 
 === 04Prologue ===
 PROLOGUE
@@ -53,11 +47,11 @@ PROLOGUE
     +[Ω]
         ->04StartMenu
     +[NEXT EPISODE]
-        ->S0Ep4
+        ->04Ep4
 
 ->DONE
 
-=== S0Ep4 ===
+=== 04Ep4 ===
 // Room 4: Climax
 {04EpisodeFour}
     +[Ω]

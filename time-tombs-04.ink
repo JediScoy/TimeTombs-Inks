@@ -1,7 +1,6 @@
-#theme: dark
-#author: Master Scoy
-#title: The Grassland
-
+# theme: dark
+# author: Master Scoy
+# title: VOYAGE across the GRASSLAND
 
 ->04StartMenu
 
@@ -11,8 +10,6 @@ INCLUDE time-tombs-04-story.ink
 
 
 === 04StartMenu ===
-//    + {not 04Preface} [Preface]
-//        ->04Preface
     + [PRESS START]
         -> 04Prologue
     + [{04EpisodeOne}]
@@ -22,6 +19,6 @@ INCLUDE time-tombs-04-story.ink
     + [{04EpisodeThree}]
         -> 04Ep3
     + [{04EpisodeFour}]
-        -> 0Ep4
+        -> 04Ep4
     + [{04EpisodeFive}]
         -> 04Ep5

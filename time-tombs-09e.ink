@@ -1,11 +1,8 @@
 #title: Preface
-#author: Master Scoy
+# theme: dark
+# author: Master Scoy
 
-->09StartMenu
 
-INCLUDE variables-global.ink
-INCLUDE variables-time-tombs.ink
-INCLUDE time-tombs-09e-story.ink
 
 ==== Preface ====
 #audio: fx-valleys

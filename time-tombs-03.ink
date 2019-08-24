@@ -1,6 +1,6 @@
-#theme: dark
-#author: Master Scoy
-#title: The Forest
+# theme: dark
+# author: Master Scoy
+# title: JOURNEY through the FOREST
 
 ->03StartMenu
 
@@ -8,12 +8,7 @@ INCLUDE variables-global.ink
 INCLUDE variables-time-tombs.ink
 INCLUDE time-tombs-03-story.ink
 
-
-
 === 03StartMenu ===
-Start Menu
-//    + {not 03Preface} [Preface]
-//        ->03Preface
     + [PRESS START]
         -> 03Prologue
     + [{03EpisodeOne}]
@@ -23,7 +18,7 @@ Start Menu
     + [{03EpisodeThree}]
         -> 03Ep3
     + [{03EpisodeFour}]
-        -> S0Ep4
+        -> 03Ep4
     + [{03EpisodeFive}]
         -> 03Ep5
 
