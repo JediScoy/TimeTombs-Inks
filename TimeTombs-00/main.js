@@ -70,7 +70,7 @@
 
                 // AUDIO: src
                 else if( splitTag && splitTag.property == "AUDIO" ) {
-                    var audioElement = document.createElement('audio');
+                    var audioElement = document.createElement('aud');
                     audioElement.src = splitTag.val;
                     storyContainer.appendChild(audioElement);
                 }

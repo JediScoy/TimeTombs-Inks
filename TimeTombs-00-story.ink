@@ -9,7 +9,8 @@
 
 === 00Prologue ===
 PROLOGUE
-# AUDIO: valleys.mp3
+# AUDIO: Audio/valleys.mp3
+  <audio> <source_src="Audio/valleys.mp3"></audio>
 You wake up in a cool, dry room. Inky blackness engulfs the senses. You get the impression that you are in some sort of dungeon or cave, but it's difficult to {~sense|perceive} much at all.
     +[Gather your thoughts]
         ->00Ep1

@@ -14,15 +14,21 @@
 <body>
 
     <div class="outerContainer">
-        <h3 class="written-in-ink"><a href="https://www.inklestudios.com/ink">WRITTEN IN INK</a></h3>
+        <h3 class="written-in-ink"><a href="https://www.inklestudios.com/ink">WRITTEN IN INK</a>
+          <audio id="myAudio">
+            <source src="Audio/valleys.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+          <button onclick="playAudio()" type="button">|></button>
+          <button onclick="pauseAudio()" type="button">||</button>
+
+
+        </h3>
+
         <div id="story" class="container">
             <div class="header">
                 <h1>WANDERING in the CAVE</h1>
                 <h2 class="byline"></h2>
-                <audio controls loop autoplay>
-                    <source src="Audio/valleys.mp3" type="audio/mpeg">
-                </audio>
-
             </div>
         </div>
     </div>
@@ -30,5 +36,19 @@
     <script src="ink.js"></script>
     <script src="TimeTombs-00.js"></script>
     <script src="main.js"></script>
+    <script src="player.js"></script>
+
+        <script>
+        var x = document.getElementById("myAudio");
+
+        function playAudio() {
+          x.play();
+        }
+
+        function pauseAudio() {
+          x.pause();
+        }
+        </script>
+
 </body>
 </html>
