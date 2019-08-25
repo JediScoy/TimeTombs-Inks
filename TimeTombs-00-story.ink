@@ -9,7 +9,7 @@
 
 === 00Prologue ===
 PROLOGUE
-# AUDIO: salt-mine
+# AUDIO: valleys.mp3
 You wake up in a cool, dry room. Inky blackness engulfs the senses. You get the impression that you are in some sort of dungeon or cave, but it's difficult to {~sense|perceive} much at all.
     +[Gather your thoughts]
         ->00Ep1
@@ -20,7 +20,7 @@ You wake up in a cool, dry room. Inky blackness engulfs the senses. You get the 
 === 00Ep1 ===
 - You recall the previous night...
 {00EpisodeOne} # AUDIO: BlueMug
-# IMAGE: images/blue-mug.jpg
+# IMAGE: Images/blue-mug.jpg
 - {Maid}: "Welcome weary adventurers!"
 - {Maid} the serving maid greets your party with a {~ warm| big| kind} smile at The Blue Mug inn.
     + You: "We grow {~bored|tired} of town life. What news of adventures do you have?""
@@ -54,7 +54,7 @@ You wake up in a cool, dry room. Inky blackness engulfs the senses. You get the 
 
 === 00Ep2 ===
 {00EpisodeTwo} #mine-arrival.mp3
-#IMAGE: images00/mine-entrance.jpg
+#IMAGE: Images/mine-entrance.jpg
 TODO: Credits http://www.clifftopalliance.org/wp-content/uploads/2012/02/P.DauBach-photo-mine-entrance.jpg
 - The next day the party arrives at the mine without incident. There doesn't seem to be anyone around though which seems odd.
     + Make your way into the mine. #mine-ambience.mp3
@@ -83,7 +83,7 @@ TODO: Credits http://www.clifftopalliance.org/wp-content/uploads/2012/02/P.DauBa
     -- You {MoveRun} down the tunnel.
 - You proceed a few minor twists and turns.
 + Then[...] <>
-# IMAGE: images00/monster-giant-spiders.jpeg
+# IMAGE: Images/monster-giant-spiders.jpeg
 
 - {~two|three} giant spiders at the edge of the torch light suddenly rush up the tunnel towards the party, chattering loudly looking very menacing. #spiders
     + { tunnel_stealth } [Fight!]
@@ -128,7 +128,7 @@ TODO: Credits http://www.clifftopalliance.org/wp-content/uploads/2012/02/P.DauBa
     + [Leave them alone]
 TODO: {TheFighter}: "Crossbow is ready!"
 
-# IMAGE: images00/monster-bats.jpeg
+# IMAGE: Images/monster-bats.jpeg
 - Your party opts to leave the bats alone. They fly overhead harmlessly and leave you alone.
 - Not much longer you find two bodies, presumably miners. A third that stirs ever so slightly when hearing you approach.
 What do you do?
@@ -173,7 +173,7 @@ What do you do?
 
 === 00Ep3 ===
 {00EpisodeThree}
-# IMAGE: images00/monster-bear.jpeg
+# IMAGE: Images/monster-bear.jpeg
 
 - A large cave bear opens its maw and roars again. The cave bear charges.
     + [{TheRogue} attacks first]
@@ -335,14 +335,7 @@ MONSTERS:
 CONST InitiativeExplained = "Everyone in combat or near combat, rolls a d20 to determine the order of each player's actions. For example, if PLAYER ONE rolls a 5 and PLAYER TWO rolls a 15, then PLAYER TWO performs his or her action before PLAYER TWO. Monsters also roll initiative."
 
 // NPCS
-VAR YoungMiner =        "James"
-VAR YoungMinerWife =    "Susan"
 
-// MONSTERS
-VAR GiantSpider = "<b>GIANT SPIDER</b>  AC:14 HP: 26"
-VAR GiantSpiderAction1 = "<b>Spider Bite</b> +5 to hit, 7 piercing damage, target must make a Constitution saving throw, taking 9 poison damage on a failed save (4 damage on a successful one)"
-    // DC 11
-VAR GiantSpiderAction2 = "<b>Web</b> +5 to hit, range 30/60 ft. The target is restrained by webbing. As an action, the restrained target can make a  Strength check bursting the webbing on a success. The webbing can also be attacked and destroyed"
     // DC 12
     // Webbing AC 10; hp 5; vulnerability to fire damage; immunity to bludgeoning, poison, and psychic damage.
 === credits_00 ===

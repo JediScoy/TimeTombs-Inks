@@ -62,6 +62,11 @@ VAR Castellan =         "Mr. Hillenar"
 VAR FarmBoy =           "Timothy"
 VAR ProfessorL =        "Professor Leyder" // a.k.a Leidenbrock
 VAR Axel =              "Axel"
+VAR YoungMiner =        "James"
+VAR YoungMinerWife =    "Susan"
+
+// MONSTERS
+
 
 
 // ***************************************************************
@@ -189,6 +194,10 @@ VAR SkeletonStats = ""
 VAR SpectreStats = ""
   VAR SpectreAction1 = ""
   VAR SpectreAction2 = ""
+VAR GiantSpider = "<b>GIANT SPIDER</b>  AC:14 HP: 26"
+VAR GiantSpiderAction1 = "<b>Spider Bite</b> +5 to hit, 7 piercing damage, target must make a Constitution saving throw, taking 9 poison damage on a failed save (4 damage on a successful one)"
+    // DC 11
+VAR GiantSpiderAction2 = "<b>Web</b> +5 to hit, range 30/60 ft. The target is restrained by webbing. As an action, the restrained target can make a  Strength check bursting the webbing on a success. The webbing can also be attacked and destroyed"
 
 // ***************************************************************
 // GAME MECHANICS
