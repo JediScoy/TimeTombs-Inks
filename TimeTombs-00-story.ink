@@ -187,8 +187,8 @@ What do you do?
 - You realize that the injured man and at least half of your party are in no condition to move soon. Something needs to be done to draw the beast away.
     + [Smash the vial of venom on it]
     + [Poke the bear with a stick.]
-        -- You consider poking the bear with a stick but your intution is "thar's a bad idea." Nor do you have stick at the moment.
-- You hurl the vial of spider venom at the bear's face while {theWizard} simultaneously blast the beast with a lightning bolt for energy damage and posion damage.
+        -- You consider poking the bear with a stick but your intuition is "that's a bad idea." Nor do you have stick at the moment.
+- You hurl the vial of spider venom at the bear's face while {theWizard} simultaneously blast the beast with a lightning bolt for energy damage and poison damage.
     + [next]
         -- The bear stands up on its hind legs to a full 9 feet before the ceiling prevents it from going further. #stand
 // Only the rogue's uncanny reflexes save him as he takes a grazing, but damaging hit from one of the razor sharp claws.
@@ -224,7 +224,7 @@ You listen intently, but don't hear anything at first. After a few moments you t
 You give the floor a big lick. It taste salty with a slight burning sensation. Hopefully it's nothing too acidic, alkaline, or otherwise poisonous. In retrospect, it was {~a rather stupid decision|a hasty decision|an idiotic decision} to lick an unknown substance. One never knows what sort of tiny creatures cover a surface.
 * (smell) [Inhale deeply]
 You inhale deeply. It smells salty and lacks any organic smells. A moment later, a very gentle air current brings faint new smells of a musty, dank nature.
-* (touche) [Touch a hand to the floor]
+* (touch) [Touch a hand to the floor]
 You reach a hand down and touch the floor. It has a rough, crystalline feel to it. Its has the feel of being carved or smoothed though by tools.
 * {senses_in_the_dark > 3} [Reach into your tunic]
 Reaching into your tunic you grasp the handle of a greasy torch and pull it out. Feeling around some more you find a small pouch tucked into your trousers with flint and steel in it. ->reach_into_tunic
@@ -278,7 +278,11 @@ A small spark whooshes the torch into life. You are at a tunnel dead end. The tu
 
 == 00Ep5 ==
 {00EpisodeFive}
-You enter the tunnel. After walking for a minute you notice the tunnel starts to become a mixture of rock with veins of salt. Another minute of walking and you come to a crossroads. By now the salt has been reduced to veins a few inches thick.
+# IMAGE: Images/salt-mine-tunnel.jpg
+
+- You enter the tunnel. After walking for a minute you notice the tunnel starts to become a mixture of rock with veins of salt. Another minute of walking and you come to a crossroads. By now the salt has been reduced to veins a few inches thick.
+  + [next]
+
 ... to be continued
 TODO: Write Episode 5
 // =2
