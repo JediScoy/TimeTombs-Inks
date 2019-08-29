@@ -175,15 +175,14 @@ What do you do?
 === 00Ep3 ===
 {00EpisodeThree}
 # IMAGE: Images/monster-bear.jpeg
-
 - A large cave bear opens its maw and roars again. The cave bear charges.
     + [{TheRogue} attacks first]
-        -- {TheRogue} releases two throwing knives into the front shoulders of the cave bear. It barely pauses before crashing into the party. Everyone in the party takes bludgeoning damage.
+        -- {TheRogue} releases two throwing knives into the front shoulders of the cave bear. It barely pauses before crashing into the party. Everyone in the party takes {d6()*2} bludgeoning damage.
     + [{TheWizard} casts a cantrip (spell)]
-        -- {TheWizard} reflexively fires three magic missiles at the cave bear. It barely pauses before crashing into the party. Everyone in the party takes (d) bludgeoning damage.
+        -- {TheWizard} reflexively fires three magic missiles at the cave bear. It barely pauses before crashing into the party. Everyone in the party takes {d6()+2} bludgeoning damage.
     + [{TheFighter} steps in front]
-        -- {TheFighter} quickly brings his buckler up. The impact splinters the shield into dozens of pieces and throws him into the side of tunnel. {TheFighter} takes (d) bludgeoning damage. {TheFighter} remains stunned for the next (1+1d4) rounds.
-- The cave bear turns quickly and bites at {~{theRogue}|{theFighter}|{YoungMiner}} doing additional damage. #bite
+        -- {TheFighter} quickly brings his buckler up. The impact splinters the shield into dozens of pieces and throws him into the side of tunnel. {TheFighter} takes {d6()*2+4} bludgeoning damage. {TheFighter} remains stunned for the next {d4()} rounds.
+- The cave bear turns quickly and bites at {~{theRogue}|{theFighter}|{YoungMiner}} doing additional {d8()+4} damage. #bite
 - You realize that the injured man and at least half of your party are in no condition to move soon. Something needs to be done to draw the beast away.
     + [Smash the vial of venom on it]
     + [Poke the bear with a stick.]
@@ -266,7 +265,8 @@ A small spark whooshes the torch into life. You are at a tunnel dead end. The tu
 
 -(episode_end)
 // Already gathered thoughts and went through flashback
-+{00Ep1 > 0} [Walk down the tunnel]
+// +{00Ep1 > 0} [Walk down the tunnel]
++ [Walk down the tunnel]
 -- You walk down the tunnel.
     ++[Ω]
         ->00StartMenu
@@ -274,7 +274,8 @@ A small spark whooshes the torch into life. You are at a tunnel dead end. The tu
         ->00Ep5
 
 // Did not gather thoughts yet
-+{00Ep1 < 1} [Gather your thoughts]
+//+ {00Ep1 < 1} [Gather your thoughts]
++ [Gather your thoughts]
 -- You gather your thoughts before leaving the room.
     ++[Ω]
         ->00StartMenu
@@ -293,9 +294,10 @@ A small spark whooshes the torch into life. You are at a tunnel dead end. The tu
     -- (deeper_1) <> and deeper into the tunnel complex. You hear the sound of dripping water. You walk downward for a what you think is a couple minutes - time is difficult to gauge in the tunnels.
         ++ [next]
     -- (intersection_2A) You come to an intersection. The main tunnel continues downward. There is also a side tunnel to the right.
-        +++ You continue in the main tunnel.
+        ++ You continue in the main tunnel.
         --- (deeper_2) Afterwhile you come to a dead end. This appears to be the end of the main mining tunnel.
-        +++ You go to the right.
+        +++ You turn around and go towards the surface. ->tunnel_out
+        ++ You go to the right.
         --- (sidetunnel_2) You walk for a short bit before coming to section where water is in the bottom of the tunnel.
             ++++ You keep walking.
             ---- The water gets deeper and deeper. Its now up to your knees. You are now cold and wet.
@@ -305,24 +307,24 @@ A small spark whooshes the torch into life. You are at a tunnel dead end. The tu
             
         ++++ You turn around.
 
-    * Go towards the surface.
-    -- (sidetunnel_1)
+    + Go towards the surface.
+    -- (tunnel_out)
     -- You walk for a few minutes following the fresh breeze.
     ++ [next]
-    -- You soon hear voices yelling up ahead 
-    +++ Proceed with stealth.
-    +++ Proceed at a walk.
-    +++ Proceed at a run.
-    --- <> You enter a small cavern and find your party.
+    -- You hear voices yelling up ahead around a turn.
+    +++ You proceed with stealth[.]
+    +++ You proceed at a walk[.]
+    +++ You proceed at a run[.]
+    --- <> around the courner. Your party is there calling out for you.
+    ++++ You enter the small cavern.
 - You: "Boy am I happy to see you guys!"
 - {TheWizard}: "What happened to you?"
 - You: "Its a long story best told back at the Blue Mug."
-+ You: "I've had a enough adventuring for today."
--- They all agree. <>
-+ You: "Guys want to hunt a Cave Bear?"
-- Having injured party members and {YoungMiner} injured, it's probably best to call it a day.
+    + You: "I've had a enough adventuring for today."
+        -- They all agree. <>
+    + You: "Guys want to hunt a Cave Bear?"
+- It's probably best to call it a day considering the injuries sustained by {YoungMiner} and your party.
 
-TODO: Write Episode 5
 // =2
 // You start walking through the tunnel.
 // * Rush out of the room ->Ep2_END
