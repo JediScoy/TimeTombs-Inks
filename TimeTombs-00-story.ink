@@ -199,9 +199,15 @@ What do you do?
     + You shove {theWizard} towards the bear.
         -- Both the bear and {theWizard} look surprised. The cave bear ignores {theWizard} and chase you.
 - You turn tail and literally run for your life.
-- You dart and dash through numerous side passages. Suddenly you have the sensation of flying through the air headfirst in utter darkness and the world goes black.
     + [next]
-    -- You wake up in a cool, dry room. Inky blackness engulfs the senses. Still not entirely sure how you got here, but its time to take action
+- You dart and dash through numerous side passages. Suddenly you have the sensation of flying through the air headfirst. There is an awful crack as you collided with something and the world goes black.
+    + [next]
+    -- ...
+    ++ [next]
+    -- ...
+    +++ [next]
+    
+- You wake up in a cool, dry room. Inky blackness engulfs the senses. Still not entirely sure how you got here, but its time to take action
 - (episode_end)
     +[Ω]
         ->00StartMenu
@@ -279,11 +285,43 @@ A small spark whooshes the torch into life. You are at a tunnel dead end. The tu
 == 00Ep5 ==
 {00EpisodeFive}
 # IMAGE: Images/salt-mine-tunnel.jpg
-
-- You enter the tunnel. After walking for a minute you notice the tunnel starts to become a mixture of rock with veins of salt. Another minute of walking and you come to a crossroads. By now the salt has been reduced to veins a few inches thick.
+- You enter the tunnel. After walking for a minute you notice the tunnel starts to become a mixture of rock with veins of salt. Another minute of walking. By now the salt has been reduced to veins a few inches thick.
   + [next]
+- (intersection_1) You come walk a bit more and come to an intersection. There is a tunnel going to your left and appears to slope down. There is a tunnel to your right and appears to slope up.
+ //   + Stay put and wait for help.
+    * Go deeper[.]
+    -- (deeper_1) <> and deeper into the tunnel complex. You hear the sound of dripping water. You walk downward for a what you think is a couple minutes - time is difficult to gauge in the tunnels.
+        ++ [next]
+    -- (intersection_2A) You come to an intersection. The main tunnel continues downward. There is also a side tunnel to the right.
+        +++ You continue in the main tunnel.
+        --- (deeper_2) Afterwhile you come to a dead end. This appears to be the end of the main mining tunnel.
+        +++ You go to the right.
+        --- (sidetunnel_2) You walk for a short bit before coming to section where water is in the bottom of the tunnel.
+            ++++ You keep walking.
+            ---- The water gets deeper and deeper. Its now up to your knees. You are now cold and wet.
+            ++++ You turn around[.]
+            ---- <> and walk back to the original intersection
+            +++++ [next] ->intersection_1
+            
+        ++++ You turn around.
 
-... to be continued
+    * Go towards the surface.
+    -- (sidetunnel_1)
+    -- You walk for a few minutes following the fresh breeze.
+    ++ [next]
+    -- You soon hear voices yelling up ahead 
+    +++ Proceed with stealth.
+    +++ Proceed at a walk.
+    +++ Proceed at a run.
+    --- <> You enter a small cavern and find your party.
+- You: "Boy am I happy to see you guys!"
+- {TheWizard}: "What happened to you?"
+- You: "Its a long story best told back at the Blue Mug."
++ You: "I've had a enough adventuring for today."
+-- They all agree. <>
++ You: "Guys want to hunt a Cave Bear?"
+- Having injured party members and {YoungMiner} injured, it's probably best to call it a day.
+
 TODO: Write Episode 5
 // =2
 // You start walking through the tunnel.
@@ -298,7 +336,7 @@ TODO: Write Episode 5
 
 === 00Epilogue ===
 EPILOGUE
-
+You all head back to the Blue Mug Inn and discuss the challenges, how you overcame them, and what can be learned and applied to your next adventure.
 ->END
 
 SEASON: 0."{Season00}" is a actually a prologue to our a class narrative "Time Tombs."

@@ -12,9 +12,9 @@ VAR Ph00 =""
 
 VAR 00EpisodeOne =   "THE BLUE MUG"
 VAR 00EpisodeTwo =   "THE MINE"
-VAR 00EpisodeThree = "THE ROOM"
-VAR 00EpisodeFour =  "THE TUNNEL"
-VAR 00EpisodeFive =  "TIME"
+VAR 00EpisodeThree = "A CREATURE"
+VAR 00EpisodeFour =  "THE ROOM"
+VAR 00EpisodeFive =  "OUT OF TIME"
 
 // ***************************************************************
 VAR Topic01 =   ""
