@@ -1,7 +1,6 @@
 # theme: dark
 # author: Master Scoy
-#title: ADVENTURE on the WATER
-
+# title: VOYAGE across the GRASSLAND
 
 ->05StartMenu
 
@@ -9,18 +8,17 @@ INCLUDE variables-global.ink
 INCLUDE variables-time-tombs.ink
 INCLUDE time-tombs-05-story.ink
 
+
 === 05StartMenu ===
     + [PRESS START]
         -> 05Prologue
-    + [Episode 1]
+    + [{05EpisodeOne}]
         -> 05Ep1
-    + [Episode 2]
+    + [{05EpisodeTwo}]
         -> 05Ep2
-    + [Episode 3]
+    + [{05EpisodeThree}]
         -> 05Ep3
-    + [Episode 4]
+    + [{05EpisodeFour}]
         -> 05Ep4
-    + [Episode 5]
+    + [{05EpisodeFive}]
         -> 05Ep5
-
-->DONE

@@ -1,4 +1,3 @@
-# title: The Forest
 # theme: dark
 # author: Master Scoy
 
@@ -7,72 +6,77 @@
 
 
 
-=== 04Prologue ===
+=== 06Prologue ===
 PROLOGUE
     +[Ω]
-        ->04StartMenu
+        ->06StartMenu
     +[NEXT EPISODE]
-        ->04Ep1
+        ->06Ep1
 
 ->DONE
 
-=== 04Ep1 ===
+=== 06Ep1 ===
 // Room 1: Guardian OR Room 2: Puzzle / Role-play Challenge
-{04EpisodeOne}
+{06EpisodeOne}
 - {Maid}: "Welcome weary adventurers!"
 - {Maid} greets your party with a {~ warm| big| kind} smile at The Blue Mug inn.
     + You: "We grow {~bored|tired} of town life. What news of adventures do you have?
 - (end_episode)
     +[Ω]
-        ->04StartMenu
+        ->06StartMenu
     +[NEXT EPISODE]
-        ->04Ep1
+        ->06Ep1
 
 ->DONE
 
-=== 04Ep2 ===
+=== 06Ep2 ===
 // Room 2: Puzzle / Role-play Challenge OR Room 1: Guardian
 
-{04EpisodeTwo}
+{06EpisodeTwo}
     +[Ω]
-        ->04StartMenu
+        ->06StartMenu
     +[NEXT EPISODE]
-        ->04Ep3
+        ->06Ep3
 
 ->DONE
 
-=== 04Ep3 ===
+=== 06Ep3 ===
 // Room 3: Trick or Setback
-{04EpisodeThree}
+{06EpisodeThree}
     +[Ω]
-        ->04StartMenu
+        ->06StartMenu
     +[NEXT EPISODE]
-        ->04Ep4
+        ->06Ep4
 
 ->DONE
 
-=== 04Ep4 ===
+=== 06Ep4 ===
 // Room 4: Climax
-{04EpisodeFour}
+{06EpisodeFour}
     +[Ω]
-        ->04StartMenu
+        ->06StartMenu
     +[NEXT EPISODE]
-        ->04Ep5
+        ->06Ep5
 
 ->DONE
 
-=== 04Ep5 ===
+=== 06Ep5 ===
 // Room 5: Reward, Revelation, or Twist
-{04EpisodeFive}
+{06EpisodeFive}
 
     +[Ω]
-        ->04StartMenu
+        ->06StartMenu
     +[NEXT EPISODE]
-        ->04Epilogue
+        ->06Epilogue
 
 ->DONE
 
-=== 04Epilogue ===
+=== 06Epilogue ===
     EPILOGUE
+
+->END
+
+
+->DONE
 
 ->END

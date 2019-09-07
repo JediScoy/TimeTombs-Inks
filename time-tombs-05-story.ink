@@ -1,3 +1,4 @@
+#title: The Grassland
 # theme: dark
 # author: Master Scoy
 
@@ -73,10 +74,5 @@ PROLOGUE
 
 === 05Epilogue ===
     EPILOGUE
-
-->END
-
-
-->DONE
 
 ->END

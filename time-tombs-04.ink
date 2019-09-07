@@ -1,13 +1,12 @@
 # theme: dark
 # author: Master Scoy
-# title: VOYAGE across the GRASSLAND
+# title: JOURNEY through the FOREST
 
 ->04StartMenu
 
 INCLUDE variables-global.ink
 INCLUDE variables-time-tombs.ink
 INCLUDE time-tombs-04-story.ink
-
 
 === 04StartMenu ===
     + [PRESS START]
@@ -22,3 +21,5 @@ INCLUDE time-tombs-04-story.ink
         -> 04Ep4
     + [{04EpisodeFive}]
         -> 04Ep5
+
+-> DONE

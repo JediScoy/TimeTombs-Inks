@@ -1,6 +1,6 @@
 # theme: dark
 # author: Master Scoy
-# title: DISCOVERY on the MOUNTAIN
+# title: WANDERING in the CAVE
 
 ->01StartMenu
 
@@ -18,8 +18,7 @@ INCLUDE TimeTombs-01-story.ink
     + [{01EpisodeThree}]
         -> 01Ep3
     + [{01EpisodeFour}]
-        -> S0Ep4
+        -> 01Ep4
     + [{01EpisodeFive}]
         -> 01Ep5
-
--> DONE
+    -> DONE

@@ -7,20 +7,20 @@
 
 
 
-=== 00Prologue ===
+=== 01Prologue ===
 PROLOGUE
 # AUDIO: Audio/valleys.mp3
   <audio> <source_src="Audio/valleys.mp3"></audio>
 You wake up in a cool, dry room. Inky blackness engulfs the senses. You get the impression that you are in some sort of dungeon or cave, but it's difficult to {~sense|perceive} much at all.
     +[Gather your thoughts]
-        ->00Ep1
+        ->01Ep1
     +[Take action]
-        ->00Ep4
+        ->01Ep4
 ->DONE
 
-=== 00Ep1 ===
+=== 01Ep1 ===
 - You recall the previous night...
-{00EpisodeOne} # AUDIO: BlueMug
+{01EpisodeOne} # AUDIO: BlueMug
 # IMAGE: Images/blue-mug.jpg
 - {Maid}: "Welcome weary adventurers!"
 - {Maid} the serving maid greets your party with a {~ warm| big| kind} smile at The Blue Mug inn.
@@ -48,13 +48,13 @@ You wake up in a cool, dry room. Inky blackness engulfs the senses. You get the 
 - The party decides to set out tomorrow morning.
 - (episode_end)
     +[Ω]
-        ->00StartMenu
-    +[NEXT EPISODE: {00EpisodeTwo}]
-        ->00Ep2
+        ->01StartMenu
+    +[NEXT EPISODE: {01EpisodeTwo}]
+        ->01Ep2
 ->DONE
 
-=== 00Ep2 ===
-{00EpisodeTwo} #mine-arrival.mp3
+=== 01Ep2 ===
+{01EpisodeTwo} #mine-arrival.mp3
 #IMAGE: Images/mine-entrance.jpg
 TODO: Credits http://www.clifftopalliance.org/wp-content/uploads/2012/02/P.DauBach-photo-mine-entrance.jpg
 - The next day the party arrives at the mine without incident. There doesn't seem to be anyone around though which seems odd.
@@ -167,13 +167,13 @@ What do you do?
     -- {TheWizard}'s wand tip now glows softly and reveals a large pair glinting eyes.
 - (episode_end)
     +[Ω]
-        ->00StartMenu
+        ->01StartMenu
     + [next]
-        -> 00Ep3
+        -> 01Ep3
 ->DONE
 
-=== 00Ep3 ===
-{00EpisodeThree}
+=== 01Ep3 ===
+{01EpisodeThree}
 # IMAGE: Images/monster-bear.jpeg
 - A large cave bear opens its maw and roars again. The cave bear charges.
     + [{TheRogue} attacks first]
@@ -205,19 +205,19 @@ What do you do?
     ++ [next]
     -- ...
     +++ [next]
-    
+
 - You wake up in a cool, dry room. Inky blackness engulfs the senses. Still not entirely sure how you got here, but its time to take action
 - (episode_end)
     +[Ω]
-        ->00StartMenu
-    +{ 00Ep4 > 1 } [NEXT EPISODE: {00EpisodeFive}]
-        ->00Ep5
-    +{00Ep4 == 0} [NEXT EPISODE: {00EpisodeFour}]
-        ->00Ep4
+        ->01StartMenu
+    +{ 01Ep4 > 1 } [NEXT EPISODE: {01EpisodeFive}]
+        ->01Ep5
+    +{01Ep4 == 0} [NEXT EPISODE: {01EpisodeFour}]
+        ->01Ep4
 ->DONE
 
-== 00Ep4 ==
-{00EpisodeFour}
+== 01Ep4 ==
+{01EpisodeFour}
 # audio:SaltMine
 - (senses_in_the_dark)
 What do you want {to do?| to do now?| to try next?}
@@ -265,26 +265,26 @@ A small spark whooshes the torch into life. You are at a tunnel dead end. The tu
 
 -(episode_end)
 // Already gathered thoughts and went through flashback
-// +{00Ep1 > 0} [Walk down the tunnel]
+// +{01Ep1 > 0} [Walk down the tunnel]
 + [Walk down the tunnel]
 -- You walk down the tunnel.
     ++[Ω]
-        ->00StartMenu
+        ->01StartMenu
     ++ [NEXT]
-        ->00Ep5
+        ->01Ep5
 
 // Did not gather thoughts yet
-//+ {00Ep1 < 1} [Gather your thoughts]
+//+ {01Ep1 < 1} [Gather your thoughts]
 + [Gather your thoughts]
 -- You gather your thoughts before leaving the room.
     ++[Ω]
-        ->00StartMenu
+        ->01StartMenu
     ++ [NEXT]
-        ->00Ep1
+        ->01Ep1
 ->DONE
 
-== 00Ep5 ==
-{00EpisodeFive}
+== 01Ep5 ==
+{01EpisodeFive}
 # IMAGE: Images/salt-mine-tunnel.jpg
 - You enter the tunnel. After walking for a minute you notice the tunnel starts to become a mixture of rock with veins of salt. Another minute of walking. By now the salt has been reduced to veins a few inches thick.
   + [next]
@@ -304,7 +304,7 @@ A small spark whooshes the torch into life. You are at a tunnel dead end. The tu
             ++++ You turn around[.]
             ---- <> and walk back to the original intersection
             +++++ [next] ->intersection_1
-            
+
         ++++ You turn around.
 
     + Go towards the surface.
@@ -331,17 +331,17 @@ A small spark whooshes the torch into life. You are at a tunnel dead end. The tu
 // * Cautiously leave the room ->Ep2_END
 // * Sit on the floor ->Ep2_END
     +[Ω]
-        ->00StartMenu
+        ->01StartMenu
     +[NEXT EPISODE]
-        ->00Epilogue
+        ->01Epilogue
 ->DONE
 
-=== 00Epilogue ===
+=== 01Epilogue ===
 EPILOGUE
 You all head back to the Blue Mug Inn and discuss the challenges, how you overcame them, and what can be learned and applied to your next adventure.
 ->END
 
-SEASON: 0."{Season00}" is a actually a prologue to our a class narrative "Time Tombs."
+SEASON: 0."{Season01}" is a actually a prologue to our a class narrative "Time Tombs."
 PURPOSE:
 \* Introduce students to a "Choose Your Own Adventure" (CYOA) narratives
 \* Introduce students to role-playing games (RPG)
@@ -364,7 +364,7 @@ MONSTERS:
 // {CaveBearAction1}
 
 +[<strong>Ω</strong>]
-    ->00StartMenu
+    ->01StartMenu
 
 ->DONE
 
@@ -383,17 +383,17 @@ CONST InitiativeExplained = "Everyone in combat or near combat, rolls a d20 to d
 
     // DC 12
     // Webbing AC 10; hp 5; vulnerability to fire damage; immunity to bludgeoning, poison, and psychic damage.
-=== credits_00 ===
+=== credits_01 ===
 Blue Mug Inn
     deviantart
 
 mine entrance
     http://www.clifftopalliance.org/wp-content/uploads/2012/02/P.DauBach-photo-mine-entrance.jpg
-    https://s3.amazonaws.com/gs-waymarking-images/b1396a00-af7d-43fc-85a9-239968c21514.jpg
+    https://s3.amazonaws.com/gs-waymarking-images/b1396a01-af7d-43fc-85a9-239968c21514.jpg
 giant spiders
-    https://media-waterdeep.cursecdn.com/avatars/thumbnails/0/323/1000/1000/636252775648743317.jpeg
+    https://media-waterdeep.cursecdn.com/avatars/thumbnails/0/323/1010/1010/636252775648743317.jpeg
 bats
-    https://media-waterdeep.cursecdn.com/avatars/thumbnails/9/906/1000/1000/636334289313689439.jpeg
+    https://media-waterdeep.cursecdn.com/avatars/thumbnails/9/906/1010/1010/636334289313689439.jpeg
 bear
     https://www.huffpost.com/entry/todd-orr-grizzly-bear-attack_n_57f237c9e4b082aad9bbec90
 

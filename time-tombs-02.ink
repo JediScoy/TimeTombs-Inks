@@ -1,16 +1,14 @@
 # theme: dark
 # author: Master Scoy
-#title: EXPEDITION in the DESERT
+# title: DISCOVERY on the MOUNTAIN
 
 ->02StartMenu
 
 INCLUDE variables-global.ink
 INCLUDE variables-time-tombs.ink
-INCLUDE time-tombs-02-story.ink
-
+INCLUDE TimeTombs-02-story.ink
 
 === 02StartMenu ===
-Start Menu
     + [PRESS START]
         -> 02Prologue
     + [{02EpisodeOne}]
