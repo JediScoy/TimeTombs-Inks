@@ -6,7 +6,7 @@
 
 INCLUDE variables-global.ink
 INCLUDE variables-time-tombs.ink
-INCLUDE TimeTombs-02-story.ink
+INCLUDE time-tombs-02-story.ink
 
 === 02StartMenu ===
     + [PRESS START]
