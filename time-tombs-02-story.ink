@@ -29,6 +29,8 @@ PROLOGUE
     -- You try to enjoy a beverage and food. After one glass and half your meal, curiosity gets the better of you.
     ++ You open the scroll.
 - <> It's an invitation:
+# IMAGE: Images/scroll-message.png
+
 \----
 Greetings adventurers,
 I hope the gods are treating you well. You are receiving this letter because of your recent actions - not just words - demonstrated initiative and integrity.
@@ -36,7 +38,7 @@ Please join the League of Adventurers at my private hall on the morrow's night.
 Thank you,
 Sir Alfred Russel Wallace
 \----
-# IMAGE: Images/scroll-message.png
+
 
 + [next]
 - The next day your party arrives at the hall after dinner. You enter and mingle for a short time while other adventurers arrive. Once there are a total of nine parties, a servant enters the main hall with an announcement.
@@ -66,7 +68,7 @@ Sir Alfred Russel Wallace
 // Room 1: Guardian OR Room 2: Puzzle / Role-play Challenge
 {02EpisodeOne}
 - Eastport is the nearest coastal town and is about 25 miles away. You could travel by foot or purchase horses. Your party discusses this and other options. The first leg of the trip around the world has started. Most teams have chosen to go by horse. There are a few eccentric travel choices as well.
-# IMAGE: /Images/figure01
+// # IMAGE: /Images/figure01
 - FIGURE 1
 - Walking: 8 hrs
 - Running: 4 hrs
