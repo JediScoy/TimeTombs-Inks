@@ -17,14 +17,24 @@ VAR 01EpisodeFour =  "THE ROOM"
 VAR 01EpisodeFive =  "OUT OF TIME"
 
 // ***************************************************************
-VAR Topic02 =   ""
-VAR Season02 =          "DISCOVERY in the MOUNTAIN"
+VAR Topic02 =   "Ecosystems & Communities"
+VAR Season02 =          "JOURNEY through the FOREST"
 // ***************************************************************
-VAR 02EpisodeOne = "THE ILLNESS"
-VAR 02EpisodeTwo = "THE MOUNTAIN"
-VAR 02EpisodeThree = "LEADVILLE"
-VAR 02EpisodeFour = "A CAVE"
-VAR 02EpisodeFive = "THE MOUNTAIN II."
+VAR 02EpisodeOne =     "DASH to EASTPORT"
+VAR 02EpisodeTwo =     "ROOM TWO: Puzzle or Role-play Challenge"
+VAR 02EpisodeThree =   "ROOM THREE: Setback"
+VAR 02EpisodeFour =    "ROOM FOUR: Big Battle"
+VAR 02EpisodeFive =    "ROOM FIVE: Revelation"
+
+// ***************************************************************
+VAR Topic04 =   ""
+VAR Season04 =          "DISCOVERY in the MOUNTAIN"
+// ***************************************************************
+VAR 04EpisodeOne = "THE ILLNESS"
+VAR 04EpisodeTwo = "THE MOUNTAIN"
+VAR 04EpisodeThree = "LEADVILLE"
+VAR 04EpisodeFour = "A CAVE"
+VAR 04EpisodeFive = "THE MOUNTAIN II."
 
 // ***************************************************************
 VAR Topic03 =   ""
@@ -36,15 +46,7 @@ VAR 03EpisodeThree = "ROOM THREE: Setback"
 VAR 03EpisodeFour = "ROOM FOUR: Big Battle"
 VAR 03EpisodeFive = "ROOM FIVE: Revelation"
 
-// ***************************************************************
-VAR Topic04 =   ""
-VAR Season04 =          "JOURNEY through the FOREST"
-// ***************************************************************
-VAR 04EpisodeOne =     "ROOM ONE: Gain Entrance"
-VAR 04EpisodeTwo =     "ROOM TWO: Puzzle or Role-play Challenge"
-VAR 04EpisodeThree =   "ROOM THREE: Setback"
-VAR 04EpisodeFour =    "ROOM FOUR: Big Battle"
-VAR 04EpisodeFive =    "ROOM FIVE: Revelation"
+
 
 // ***************************************************************
 VAR Topic05 =   ""
