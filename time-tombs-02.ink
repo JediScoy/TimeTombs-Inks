@@ -9,6 +9,8 @@ INCLUDE variables-time-tombs.ink
 INCLUDE time-tombs-02-story.ink
 
 === 02StartMenu ===
+// # IMAGE: Images/icon.png
+
     + [PRESS START]
         -> 02Prologue
     + [{02EpisodeOne}]
@@ -23,4 +25,7 @@ INCLUDE time-tombs-02-story.ink
     + [{02EpisodeFive}]
         -> 02Ep5
 ********************************/
+
+
+
 -> DONE
