@@ -127,7 +127,7 @@ strong {
 }
 
 img {
-    display: block;
+    display: inline;
     margin: 0 auto;
     max-width: 100%;
 }
@@ -152,7 +152,7 @@ p.choice {
 
 /* first choice */
 :not(.choice) + .choice {
-    padding-top: 1em; 
+    padding-top: 1em;
 }
 
 

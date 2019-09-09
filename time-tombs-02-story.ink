@@ -39,23 +39,32 @@ Thank you,
 Sir Alfred Russel Wallace
 \----
 
-
-+ [next]
+    + [next]
 - The next day your party arrives at the hall after dinner. You enter and mingle for a short time while other adventurers arrive. Once there are a total of nine parties, a servant enters the main hall with an announcement.
-+ [next]
+    + [next]
 - Servant: "Each party here has demonstrated some extraordinary quality. Thus, you have earned an invitation to an amazing race around the world of Regio Scientiae. Any team that can go around the world in 80 days will earn a payout of 2,000 gold pieces for their respective party. The fastest  will earn 10,000 gold pieces."
-+ [next]
+    + [next]
 - Servant: "There are a few rules. 1) No teleportation or otherwise magicking from location to location. 2) Parties may not attack one another. Good luck!"
-+ [next]
+    + [next]
 - The other teams bolt from the room.
     + You accept the challenge.
     + You want to think about it first.
-    -- Afterall, a race around the world is big endeavor.
-    ++ You think about it for 10 minutes.
-    ++ You think about if for a day.
-    --- Eventually you come to the conclusion that you don't want to miss out on this oppurtunity. You set out behind the other teams now.
+        -- Afterall, a race around the world is big endeavor.
+        ++ You think about it for 10 minutes.
+            --- (wait_10_minutes) Eventually you come to the conclusion that you don't want to miss out on this oppurtunity. You set out behind the other teams now.
+        ++ You think about if for a day.
+            --- (wait_a_day) Eventually you come to the conclusion that you don't want to miss out on this oppurtunity. You set out behind the other teams now.
 - <> There's a mad dash for the door.
 + DEXTERITY check.
+TODO: Add DEX check options
+/********
+    + DEX roll 1
+    + DEX roll 2-5
+    + DEX roll 6-10
+    + DEX roll 11-15
+    + DEX roll 16+
+********/
+
 - In the scramble, a few trip over each other and unceremoniously fall into benches. Not the best way to start a race! A handful of others were more prepared and posted themselves near the door. They make quick retreats.
     +[Ω]
         ->02StartMenu
@@ -67,19 +76,27 @@ Sir Alfred Russel Wallace
 === 02Ep1 ===
 // Room 1: Guardian OR Room 2: Puzzle / Role-play Challenge
 {02EpisodeOne}
-- Eastport is the nearest coastal town and is about 25 miles away. You could travel by foot or purchase horses. Your party discusses this and other options. The first leg of the trip around the world has started. Most teams have chosen to go by horse. There are a few eccentric travel choices as well.
-// # IMAGE: /Images/figure01
-- FIGURE 1
+- Eastport is the nearest coastal town and is about 25 miles away. You could travel by foot, purchase horses, or pursue other options. Your party discusses options. 
+
 - Walking: 8 hrs
 - Running: 4 hrs
 - Horse (75 GP/person)
 - Walking: 4 hrs
 - Running: 2 hrs
-    + [next]
+# IMAGE: Images/stat-block-travel-by-foot.png
+
+    + Travel by foot
+//     The first leg of the trip around the world has started. Most teams have chosen to go by horse. There are a few eccentric travel choices as well.
+
+//     + [next]
+
 - EASTPORT
 - Although its the largest port in this region, Eastport is a small port in comparison to others in the realm. Most buildings are single or double story with only a couple of three story timber buildings. Aside from their occupations - seafaring folk rather than farmers - the people of Eastport are much like the people of Canis Villa. They are just trying to eek out a modest life and not worry about the affairs of the larger realm.
     + [next]
-- The first two parties to arrive are the International Lions and the Dolphins. Both parties head farther east into town towards the docks, but turn north to an open grassy area before reaching the docks. In the open space a large airship sits at the ready. Its fully inflated and moored to the ground with large stakes and ropes.
+- There is an airfield to the north of the small city. In the open space there is a large airship. Its mostly inflated and moored to the ground with large stakes and ropes.
+# IMAGE: Images/airship-2.png 
+
+# IMAGE: Images/sailing-ship-1.png
 
 - (end_episode)
     +[Ω]
