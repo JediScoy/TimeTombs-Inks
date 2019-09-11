@@ -74,18 +74,28 @@ TODO: Add DEX check options
 ->DONE
 
 === 02Ep1 ===
+# CLEAR
 // Room 1: Guardian OR Room 2: Puzzle / Role-play Challenge
 {02EpisodeOne}
-- Eastport is the nearest coastal town and is about 25 miles away. You could travel by foot, purchase horses, or pursue other options. Your party discusses options. 
-
-- Walking: 8 hrs
-- Running: 4 hrs
-- Horse (75 GP/person)
-- Walking: 4 hrs
-- Running: 2 hrs
+- Eastport is the nearest coastal town and is about 25 miles away. You could travel by foot at a fast pace, normal pace, or slow pace. Your party discusses the pros and cons of each.
 # IMAGE: Images/stat-block-travel-by-foot.png
+- How do you choose to travel?
+VAR Eastport_fast = "6hrs"
+VAR Eastport_travel = "(25/3*60)"
+VAR tt = "travel time"
 
-    + Travel by foot
+    + [At a fast pace]
+        ~ tt = 25/4
+        -- You do not encounter any bandits or monsters along the way.
+        -- Traveling at a fast pace you arrive at Eastport after {tt} hours.
+    + [At a normal pace]
+        ~ tt = 25/3
+        -- You do not encounter any bandits or monsters along the way.
+        -- Traveling at a normal pace you arrive at Eastport after {tt} hourrs.
+    + [At a slow pace]
+        ~ tt = 25/2
+        -- You do not encounter any bandits or monsters along the way.
+        -- Traveling at a normal pace you arrive at Eastport after {tt} hours.
 //     The first leg of the trip around the world has started. Most teams have chosen to go by horse. There are a few eccentric travel choices as well.
 
 //     + [next]
@@ -93,23 +103,38 @@ TODO: Add DEX check options
 - EASTPORT
 - Although its the largest port in this region, Eastport is a small port in comparison to others in the realm. Most buildings are single or double story with only a couple of three story timber buildings. Aside from their occupations - seafaring folk rather than farmers - the people of Eastport are much like the people of Canis Villa. They are just trying to eek out a modest life and not worry about the affairs of the larger realm.
     + [next]
-- There is an airfield to the north of the small city. In the open space there is a large airship. Its mostly inflated and moored to the ground with large stakes and ropes.
+- There is a tiny airfield about 2 miles north of the small city. Generally there is only one or two air ships at a time so it'll be a fierce race to get there if you choose that route. The payoff would be much improved travel time across the ocean.
+- The docks are straight ahead to the east. Being a port city, there are typically a dozen or more ships at any given time.
++ [Go to airfield]
+-- In the open space there is a large airship. Its mostly inflated and moored to the ground with large stakes and ropes.
 # IMAGE: Images/airship-2.png 
 
++ [Go to the docks]
+-- You continue a short distance through town and arrive at the docks. There are plenty of ships. Most notable is "The Beagle."
 # IMAGE: Images/sailing-ship-1.png
 
+-
 - (end_episode)
     +[Ω]
         ->02StartMenu
     +[NEXT EPISODE]
-        ->02Ep1
+        ->02Ep2
 
 ->DONE
 
 === 02Ep2 ===
+# CLEAR
 // Room 2: Puzzle / Role-play Challenge OR Room 1: Guardian
-
 {02EpisodeTwo}
+- DAY 2
+- When you sail on DAY 2 of the race, the weather is fair. You make excellent progress.
+- DAY 3 
+- Today the weather is fair. You make excellent progress.
+- DAY 4 
+
+Setting The weather starts out fair for the first couple of days. You make excellent time. On the third day however things get interesting.
++ [next]
+- 
     +[Ω]
         ->02StartMenu
     +[NEXT EPISODE]
