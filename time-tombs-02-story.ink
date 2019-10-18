@@ -112,8 +112,21 @@ VAR tt = "travel time"
 + [Go to the docks]
 -- You continue a short distance through town and arrive at the docks. There are plenty of ships. Most notable is "The Beagle."
 # IMAGE: Images/sailing-ship-1.png
+VAR ShipPassage = 5
 
--
+-- You find Captain Flint aboard the ship.
+    + [next]
+- Flint: "I'm always looking for another adventure - especially those that pay well."
+    + [Haggle on price]
+    -- You: "That seems a bit steep, perhaps we'll go elsewhere."
+    -- Flint: "Perhaps you should if you're only looking to save money on passage. You might find cheaper rates, but you won't find as fine a ship nor crew as mine."
+        ++ [Keep haggling]
+        --- Flint: "Well if ya want to be salty about it, then that'll be another +10% and if ye don't like that, go somewhere else."
+        +++ [Accept the fair]
+    + [Accept the fair]
+    ~ ShipPassage = 5*0.20+5
+    -- You agree to pay the {ShipPassage} gold pieces per day for it being an extended trip. 
+- You haggle a little, but agree on a price. You're not in too much of a position to barter. You just want to secure passage on a reputable shop.
 - (end_episode)
     +[Ω]
         ->02StartMenu
