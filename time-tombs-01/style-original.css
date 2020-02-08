@@ -24,7 +24,7 @@ h1 {
 }
 
 h2 {
-    font-size: 24pt;
+    font-size: 14pt;
     font-style: italic;
     font-family: sans-serif;
     font-weight: lighter;
@@ -88,8 +88,8 @@ h3.written-in-ink {
 }
 
 p {
-    font-size: 24pt;
-    color: #fff;
+    font-size: 13pt;
+    color: #888;
     line-height: 1.7em;
     font-weight: lighter;
 }
@@ -157,7 +157,7 @@ p.choice {
 
 
 p.choice a {
-    font-size: 24pt;
+    font-size: 15pt;
 }
 
 /* Built in class if you want to write:
