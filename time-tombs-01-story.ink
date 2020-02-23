@@ -266,8 +266,8 @@ A small spark whooshes the torch into life. You are at a tunnel dead end. The tu
 -(episode_end)
 // Already gathered thoughts and went through flashback
 // +{01Ep1 > 0} [Walk down the tunnel]
-+ [Walk down the tunnel]
--- You walk down the tunnel.
++ [Walk into the tunnel]
+-- You walk into the tunnel.
     ++[Ω]
         ->01StartMenu
     ++ [NEXT]
@@ -285,47 +285,64 @@ A small spark whooshes the torch into life. You are at a tunnel dead end. The tu
 
 == 01Ep5 ==
 {01EpisodeFive}
+
 # IMAGE: Images/salt-mine-tunnel.jpg
-- You enter the tunnel. After walking for a minute you notice the tunnel starts to become a mixture of rock with veins of salt. Another minute of walking. By now the salt has been reduced to veins a few inches thick.
-  + [next]
-- (intersection_1) You come walk a bit more and come to an intersection. There is a tunnel going to your left and appears to slope down. There is a tunnel to your right and appears to slope up.
- //   + Stay put and wait for help.
-    * Go deeper[.]
-    -- (deeper_1) <> and deeper into the tunnel complex. You hear the sound of dripping water. You walk downward for a what you think is a couple minutes - time is difficult to gauge in the tunnels.
-        ++ [next]
-    -- (intersection_2A) You come to an intersection. The main tunnel continues downward. There is also a side tunnel to the right.
-        ++ You continue in the main tunnel.
-        --- (deeper_2) Afterwhile you come to a dead end. This appears to be the end of the main mining tunnel.
-        +++ You turn around and go towards the surface. ->tunnel_out
-        ++ You go to the right.
-        --- (sidetunnel_2) You walk for a short bit before coming to section where water is in the bottom of the tunnel.
-            ++++ You keep walking.
-            ---- The water gets deeper and deeper. Its now up to your knees. You are now cold and wet.
-            ++++ You turn around[.]
-            ---- <> and walk back to the original intersection
-            +++++ [next] ->intersection_1
+// LEAVING ROOM 1
+- You enter the tunnel.  Straight ahead is a wall and a dead end to right, so you turn left. You walk forward a short distance (25 ft).
++ [next] ->Location2
+===Location2
+You are now at a four-way intersection.
++ [Go left]
+    <> You go left and walk about fifteen feet before turning a corner to the left and followed by another to the right. The tunnel continues straight for a ways (30 ft) and so you continue.
+    ++ Proceed with caution[.]
+    ++ Walk casually[.]
+    ++ Run down the tunnel[.]
+        --<> and come to a medium sized room (10 x 25 ft).
+        +++ You enter the room ->Room4
 
-        ++++ You turn around.
+// + [Go right]
+// + [Go straight]
+->DONE
 
-    + Go towards the surface.
-    -- (tunnel_out)
-    -- You walk for a few minutes following the fresh breeze.
-    ++ [next]
-    -- You hear voices yelling up ahead around a turn.
-    +++ You proceed with stealth[.]
-    +++ You proceed at a walk[.]
-    +++ You proceed at a run[.]
-    --- <> around the courner. Your party is there calling out for you.
-    ++++ You enter the small cavern.
+===Room4
+-You notice a closed door to the left. There is also a pile of rubble in the upper-right corner.
+    + [Investigate]
+        --You investigate the room, but don't notice anything new
+            ++ Leave the room
+    + You turn around and retrace your steps
+-You go back to the T-intersection. 
+-To the right is the tunnel you woke up in. There is a smaller side tunnel to the left. The main tunnel goes straight into the dark (at least 30 ft ahead).
+    + [Turn left]
+    -- You go down the the smaller tunnel. You walk a short distance (25 ft) and the tunnel turns to the left into a small room (10 x 15 ft).
+        +++ [Investigate]
+            --- After investigating, the room appears to be a staging area of sorts. There is a short tunnel to the right side of the room that slops upward.
+                ++++ You explore the upward tunnel <>
+                    ---- and follow it up until reaching an opening covered with clumps of bushes and brush. You poke your ahead through into the light.
+                        You decide to make the trek back to the Blue Mug Inn.
+                        +++++ [Next]->BackToBlueMug
+
+    + You go striaight.
+        ->DONE
+        
+
+
+-> DONE
+
+
+===BackToBlueMug===
+- You walk into the Blue Mug Inn.
++ [next]
 - You: "Boy am I happy to see you guys!"
 - {TheWizard}: "What happened to you?"
-- You: "Its a long story best told back at the Blue Mug."
+- You: "Its a long story best told over a pint."
+->END
+
     + You: "I've had a enough adventuring for today."
         -- They all agree. <>
     + You: "Guys want to hunt a Cave Bear?"
 - It's probably best to call it a day considering the injuries sustained by {YoungMiner} and your party.
 
-// =2
+// 
 // You start walking through the tunnel.
 // * Rush out of the room ->Ep2_END
 // * Cautiously leave the room ->Ep2_END
@@ -353,7 +370,7 @@ PURPOSE:
 HABITS OF MIND: persistence, growth mindset
 COURSE: Biology
 FIRST DRAFT: Summer 2019
-CURRENT DRAFT: 2019 July 10
+CURRENT DRAFT: 2020 FEB 22
 
 MONSTERS:
 {GiantSpider}
@@ -399,3 +416,38 @@ bear
 
 
     -> END
+    
+    
+    After walking for a minute you notice the tunnel starts to become a mixture of rock with veins of salt. Another minute of walking. By now the salt has been reduced to veins a few inches thick.
+
++ [next]
+- (intersection_1) You come walk a bit more and come to an intersection. There is a tunnel going to your left and appears to slope down. There is a tunnel to your right and appears to slope up.
+ //   + Stay put and wait for help.
+    * Go deeper[.]
+    -- (deeper_1) <> and deeper into the tunnel complex. You hear the sound of dripping water. You walk downward for a what you think is a couple minutes - time is difficult to gauge in the tunnels.
+        ++ [next]
+    -- (intersection_2A) You come to an intersection. The main tunnel continues downward. There is also a side tunnel to the right.
+        ++ You continue in the main tunnel.
+        --- (deeper_2) Afterwhile you come to a dead end. This appears to be the end of the main mining tunnel.
+        +++ You turn around and go towards the surface. ->tunnel_out
+        ++ You go to the right.
+        --- (sidetunnel_2) You walk for a short bit before coming to section where water is in the bottom of the tunnel.
+            ++++ You keep walking.
+            ---- The water gets deeper and deeper. Its now up to your knees. You are now cold and wet.
+            ++++ You turn around[.]
+            ---- <> and walk back to the original intersection
+            +++++ [next] ->intersection_1
+
+        ++++ You turn around.
+->DONE
+    + Go towards the surface.
+    -- (tunnel_out)
+    -- You walk for a few minutes following the fresh breeze.
+    ++ [next]
+    -- You hear voices yelling up ahead around a turn.
+    +++ You proceed with stealth[.]
+    +++ You proceed at a walk[.]
+    +++ You proceed at a run[.]
+    --- <> around the courner. Your party is there calling out for you.
+    ++++ You enter the small cavern.
+->DONE

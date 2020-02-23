@@ -10,7 +10,6 @@ INCLUDE time-tombs-01-story.ink
 
 === 01StartMenu ===
 // # IMAGE: Images/icon.png
-
     + [PRESS START]
         -> 01Prologue
     + [{01EpisodeOne}]
@@ -23,6 +22,4 @@ INCLUDE time-tombs-01-story.ink
         -> 01Ep4
     + [{01EpisodeFive}]
         -> 01Ep5
-
-
-    -> DONE
+-> DONE
