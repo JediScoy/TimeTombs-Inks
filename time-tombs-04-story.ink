@@ -30,7 +30,7 @@ A boy yells in gasps, "My sister! ... My sister!"
     + Your party decides to finish their dinner first.
 - Another dozen or so townsfolk also rise. The crowd quickly makes its way to the edge of town to {FarmBoy}'s small farm.
     +[Ω]
-        ->StartMenu
+        ->04StartMenu
     +[NEXT EPISODE]
         ->04Ep1
 
