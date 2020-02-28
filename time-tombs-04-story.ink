@@ -33,13 +33,6 @@ A boy yells in gasps, "My sister! ... My sister!"
         ->04StartMenu
     +[NEXT EPISODE]
         ->04Ep1
-
-->DONE
-    +[Ω]
-        ->04StartMenu
-    +[NEXT EPISODE]
-        ->04Ep1
-
 ->DONE
 
 === 04Ep1 ===
