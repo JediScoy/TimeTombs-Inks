@@ -8,7 +8,7 @@ INCLUDE variables-global.ink
 INCLUDE variables-time-tombs.ink
 INCLUDE time-tombs-04-story.ink
 
-=== 02StartMenu ===
+=== 04StartMenu ===
     + [PRESS START]
         -> 04Prologue
     + [{04EpisodeOne}]
