@@ -2,6 +2,8 @@
 #author: Master Scoy
 
 INCLUDE time-tombs-about.ink
+INCLUDE time-tombs-global.ink
+INCLUDE time-tombs-time-tombs.ink
 INCLUDE time-tombs-0.ink
 INCLUDE time-tombs-1.ink
 INCLUDE time-tombs-2.ink
@@ -9,7 +11,8 @@ INCLUDE time-tombs-3.ink
 INCLUDE time-tombs-4.ink
 INCLUDE time-tombs-5.ink
 
-->TTStartMenu
+// ->TTStartMenu
+
 // ORIGINS
 // ----------------------------------
 // Wandering in the Woods
@@ -31,6 +34,7 @@ INCLUDE time-tombs-5.ink
 // The Water of Time
 
 
+/************
 ==TTStartMenu==
     + Prologue: {SeasonTT0}
         ->TT0StartMenu
@@ -44,6 +48,7 @@ INCLUDE time-tombs-5.ink
        ->TT4StartMenu
     + Season 5: {SeasonTT5}
        ->TT5StartMenu
+**/
 
 ->DONE
 
